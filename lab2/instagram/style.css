@@ -211,3 +211,17 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.title{
+    width: 175px;
+    height: 51px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.title img {
+    width: 175px;
+    height: 60px;
+    position: absolute;
+    margin: -60px 0px 0px -40px;
+}
