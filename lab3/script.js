@@ -7,16 +7,6 @@ clickbutton.addEventListener('click', () => {
     addTask();
 })
 
-const state = {
-    notes : [
-        {text: '', status: true},
-    ],
-    filters : 'all'
-};
-
-
-
-
 
 input.addEventListener('keydown', (ev) => {
     if (ev.key === 'Enter') {
@@ -31,9 +21,6 @@ function addTask() {
         const li = document.createElement('li');
         li.textContent = input.value;
 
-        //Реализация Стейта
-        const text = input.value;
-        
 
 
         const doneButton = document.createElement('button');
@@ -64,12 +51,3 @@ function addTask() {
         })
     }
 };
-
-
-const filter = document.getElementById('filter');
-filter.addEventListener('click', () => {
-    if (list.childNodes.length > 0 && !document.getElementById('delete-all-button')) {
-        document.createElement("")
-
-    }
-})
